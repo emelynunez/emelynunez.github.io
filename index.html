@@ -41,4 +41,70 @@
         <p></p>
         
     </body>
+    var x = 0; // x position
+var y = 0; // y position
+var r = 0; // red 
+var g = 0; // green
+var b = 0; // blue
+var t = 0; // transparency
+
+draw = function() {
+    
+    
+fill(x, r, t);
+rect(30, 40, 200, t);
+    
+fill(255, 0, y);
+ellipse(80, x, 80, 400);
+//make transperant ellipse
+fill(80, y, 140);
+ellipse(300, 30,b,50);
+    
+fill(x, 67, 186);
+rect(x, 250, y, 50);
+
+fill(g, x, y);
+ellipse(x, g, 20, 20);
+
+fill(t, r, g);
+rect(60,7,y,8,8);
+
+fill(g,5,t);
+ellipse(t,b,7,10);
+
+rect(100,300,60,60,60);
+fill(g, x, y);
+ellipse(350,g,90,100);
+
+
+rect(7,y,80,40,g);
+
+ellipse(240,350,y,x);
+    x +=10;  // no se importa los numeros, escoje varios numeros
+    y += 5;
+    r += 9;
+    g += 7;
+    b += 9;
+    t+= 10;
+    
+    if (x > 300){
+        x = 0;
+    }
+    if (y > 300){
+        y = 0;
+    }
+    if (r > 300){
+        r = 0;
+    }
+    if (g > 300){
+        g = 0;
+    }
+    if (b > 300){
+        b = 0;
+    }
+    if (t > 300){
+        t = 0;
+    }
+
+};
 </html>
